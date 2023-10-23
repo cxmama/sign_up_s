@@ -8,7 +8,7 @@ if '_main_dg' not in st.session_state:
     st.session_state['_main_dg'] = {'_markdowns': [], 'roll_call_started': False, 'roll_call_count': 0}
 
 # Read student information file
-student_info = pd.read_csv('\\student_info.csv', encoding='gbk')
+student_info = pd.read_csv('student_info.csv', encoding='gbk')
 
 # Get student name list
 name_list = student_info['姓名'].to_list()
